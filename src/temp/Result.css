@@ -1,0 +1,141 @@
+:root{
+    --bg: rgb(224, 224, 224);
+}
+
+
+.container{
+    height: fit-content;
+    width: 90%;
+    margin-top: 80px;
+}
+.holder-div{
+    background-color: var(--bg);
+}
+.upper-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--bg);
+    border-radius: 10px;
+}
+
+.img-div{
+    height: 300px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.upper-container img{
+    height: 100%;
+    width: auto;
+    background-color: inherit;
+}
+
+.score{
+    background-color: inherit;
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score p:last-child, .score p:first-child{
+    font-weight: bold;
+    margin: 0;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.answer-item{
+    height: fit-content;
+    width: 96%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.114);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.question{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+
+.question h4{
+    margin: 0;
+}
+
+/* MCQ design */
+.mcq-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.custom-option{
+    background-color: rgba(205, 192, 192, 0.416);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.border-box{
+    border: 1px solid black;
+}
+
+.custom-option:hover{
+    background-color: rgb(130, 130, 130);
+    
+}
+.custom-option:hover .custom-lebel{
+    color: white;
+}
+
+.custom-lebel{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* resposiveness */
+@media (max-width:1000px) {
+    .img-div{
+        display: none;
+    }
+    .upper-container{
+        justify-content: center;
+    }
+
+    .score{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .mcq-div{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .q-icon{
+        display: none;
+    }
+}

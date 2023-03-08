@@ -1,0 +1,73 @@
+
+
+
+/* body style */
+
+.video_parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.video_container{
+    height: fit-content;
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-bottom: 40px;
+}
+
+
+/* custom bootstrap classes */
+
+.hover_bg_changer:hover{
+    background-color: red;
+}
+
+.inside_videoCard_div{
+    height: 95%; 
+    width: 94%;  
+}
+
+.c_main_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+}
+
+
+@media (max-width: 1400px){
+
+    .video_container{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .video_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .c_main_card{
+        width: 20rem;
+    }
+}
+
+@media (max-width: 700px){
+    .video_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .c_main_card{
+        width: 22rem;
+    }
+}
+
+
+

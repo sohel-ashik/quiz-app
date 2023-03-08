@@ -1,0 +1,51 @@
+
+
+.signup_parent{
+    width: 90%;
+    height: 100vh;
+    margin-top: 90px;
+}
+
+.main_content{
+    height: 100%;
+    width: 100%;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: row;
+}
+
+.img_holder{
+    height: 100%;
+    width: 50%;
+    padding-right: 2%;
+}
+
+.main_form{
+    height: 80%;
+    width: 50%;
+}
+
+/* inputbox design */
+.height_60
+{
+    height: 60px;
+}
+
+.pad_left_20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+@media (max-width:1000px){
+    .img_holder{
+        display: none;
+    }
+
+    .main_form{
+        width: 100%;
+    }
+}

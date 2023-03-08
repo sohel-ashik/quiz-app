@@ -1,0 +1,145 @@
+
+.signup{
+    margin-left: 5px;
+}
+
+.main_container{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.parent_container{
+    width: 90%;
+    height: fit-content;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+}
+
+.mcq{
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    padding-bottom: 100px;
+}
+
+.custom_option{
+    background-color: rgba(205, 192, 192, 0.416);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.border_box{
+    border: 1px solid black;
+}
+
+.custom_option:hover{
+    background-color: rgb(130, 130, 130);
+    
+}
+.custom_option:hover .custom_lebel{
+    color: white;
+}
+
+.custom_lebel{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+/* progressbar */
+
+.progress_div{
+    position: fixed;
+    bottom: 15px;
+    width: 90%;
+    height: 50px;
+    background-color: rgb(107, 255, 221);
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid rgb(8, 173, 143); */
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.34);
+}
+
+.inside{
+    display: flex;
+    width: 95%;
+    gap: 5px;
+}
+
+.p_b_parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.p_b{
+    width: 100%;
+}
+
+.left_btn:hover .back_icon > path{
+    color: white;
+}
+.left_btn{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.next_b{
+    width:200px;
+}
+
+.right_icon > path {
+    color: white;
+  }
+
+.right_icon{
+    margin-left: 8px;
+}
+
+
+/* Design for error box */
+.error_parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.main_div{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+
+@media (max-width:1000px){
+    .mcq{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .n_q{
+        display: none;
+    }
+    .right_icon{
+        margin-left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .next_b{
+        width: fit-content;
+    }
+}

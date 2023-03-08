@@ -1,0 +1,77 @@
+/* global */
+.signup{
+    text-decoration: none;
+}
+
+
+/* Navigation Design */
+.navigation{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(228, 228, 228);
+    height: 64px;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.nav_left{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.1rem;
+}
+
+.main_logo{
+    font-size: 50px;
+    margin-right: 1.1rem;
+    margin-top: 5px;
+}
+
+.app_name{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    width: max-content;
+}
+
+.nav_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.usericon{
+    padding-right: 10%;
+}
+
+.log_out{
+    color: white;
+    background-color: red;
+    font-size: 1.08rem;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.525);
+}
+
+.log_out:hover{
+    color: white;
+    background-color: rgb(143, 8, 8);
+}
+
+
+/* responsiveness */
+
+@media (max-width: 600px) {
+    .app_name{
+        display: none;
+    }
+    .main_logo > path {
+        color: rgb(0, 0, 118);
+    }
+    
+}
