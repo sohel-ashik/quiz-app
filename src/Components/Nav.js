@@ -1,4 +1,4 @@
-import mainLogo from '../images/logo-bg.png'
+import mainLogo from '../images/quiz.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser,faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFeather } from '@fortawesome/free-solid-svg-icons';
@@ -65,8 +65,8 @@ export default function Nav(props)
         <nav className={navStyle.navigation}>
             <Link to={goTo} className={`link ${navStyle.nav_left}`}>
 
-                {/* <img className={navStyle.main_logo} src={mainLogo}/> */}
-                <FontAwesomeIcon icon={faFeather} className={navStyle.main_logo}/>
+                <img className={navStyle.main_logo} src={mainLogo}/>
+                {/* <FontAwesomeIcon icon={faFeather} className={navStyle.main_logo}/> */}
                 <h3 className={navStyle.app_name}> Quiz App</h3>
             
             </Link>
