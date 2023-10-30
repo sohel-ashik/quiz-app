@@ -12,8 +12,8 @@ import ErrorFragment from './ErrorFragment';
 
 export default function(){
 
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
+    const [email, setEmail] = useState('ashik@gmail.com');
+    const [pass, setPass] = useState('aaaaaaaa');
     const [loading, setLoading] = useState(false);
     const[error, setError] = useState('');
     const Navigate = useNavigate();
